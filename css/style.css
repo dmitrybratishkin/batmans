@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container {
+    border: 1px;
+    /* максимальная ширина */
+    max-width: 1140px;
+    /* Выравниваем по центру */
+    margin: auto;
+}
+/* Cтили для шапки */
+.header {
+    display: flex;
+    /* выравниваю по центру по вертикали */
+    align-items: center;
+    justify-content: space-between;
+    /* внутренний отступ сверху */
+    padding-top: 45px;
+}
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+}
+.search-input {
+    flex: 1;
+    /* фоновый цвет */
+    background: rgba(196, 196, 196, 0.5);
+    /* скругление */
+    border-radius: 5px;
+    /* внутренний отступ сверху */
+    padding-top: 12px;
+    /* внутренний отступ снизу */
+    padding-bottom: 12px;
+    /* отступы по краям */
+    padding-left: 18px;
+    padding-right: 18px;
+    /* убираем рамку */
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+::-webkit-input-placeholder { /* Chrome */
+    color: #AEAEAE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #AEAEAE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #AEAEAE;
+    opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #AEAEAE;
+    opacity: 1;
+}
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10 18px;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
